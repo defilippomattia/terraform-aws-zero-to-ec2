@@ -1,7 +1,24 @@
-# terraform-aws-zero-to-ec2
+# Introduction
 
-Terraform module which creates all the resources needed for VM on AWS.
+This terraform module creates (almost) all resources needed (vpc, igw, sg, ec2 etc.) for running a VM on AWS automatically.
 
-# Test headline
+The only manual step needed is to create a key pair on AWS and then provide the name of the key pair to the module.
 
-Hello world
+# How to use (example folder)
+
+1. Create a key pair on AWS
+
+2. Run the following commands:
+
+```bash
+cd example/
+terraform init
+terraform plan
+terraform apply
+```
+
+# Improvements
+
+- automate the creation of the key pair
+- configurable AWS region
+- configurable VPC parameters (cidr, subnets etc.)
