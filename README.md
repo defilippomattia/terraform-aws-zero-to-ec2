@@ -4,6 +4,8 @@ This terraform module creates (almost) all resources needed (vpc, igw, sg, ec2 e
 
 The only manual step needed is to create a key pair on AWS and then provide the name of the key pair to the module.
 
+Terraform registry link https://registry.terraform.io/modules/defilippomattia/zero-to-ec2
+
 # How to use (example folder)
 
 1. Create a key pair on AWS
